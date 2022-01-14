@@ -11,12 +11,12 @@
       <h1>募集内容</h1>
       <div class='content'>
             <div class='content_post'>
-               <h2 class='title'>{{ $post->title}}</h2>
-               <p class='category'>{{ $post->category}}</p>
-               <p class='time'>{{ $post->time}}</p>
-               <p class='location'>{{ $post->location}}</p>
-               <p class='number'>{{ $post->number}}</p>
-               <p class='requirement'>{{ $post->requirement}}</p>
+               <h2 class='title'>タイトル：{{ $post->title}}</h2>
+               <p class='category'>種目種目：{{ $post->category}}</p>
+               <p class='time'>日時日時：{{ $post->time}}</p>
+               <p class='location'>活動場所：{{ $post->location}}</p>
+               <p class='number'>募集人数：{{ $post->number}}</p>
+               <p class='requirement'>募集要件：{{ $post->requirement}}</p>
             </div>
             <div class="footer">
                <a href="/">募集一覧へ戻る</a>
