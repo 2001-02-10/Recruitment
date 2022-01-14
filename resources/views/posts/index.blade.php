@@ -9,14 +9,15 @@
     </head>
    <body>
       <h1>募集一覧</h1>
+      <a href='/posts/create'>募集する</a>
       <div class='posts'>
           @foreach($posts as $post) 
             <div class='post'>
                <h2 class='title'>
                   <a href="/posts/{{ $post->id}}">{{ $post->title}}</a> 
                </h2>
-               <p class='category'>{{ $post->category}}</p>
-               <p class='location'>{{ $post->location}}</p>
+               <p class='category'>種目：{{ $post->category}}</p>
+               <p class='location'>活動場所：{{ $post->location}}</p>
             </div>
           @endforeach
           <div class='paginate'>
