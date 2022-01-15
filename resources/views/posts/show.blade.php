@@ -12,6 +12,7 @@
       <div class='content'>
             <div class='content_post'>
                <h2 class='title'>タイトル：{{ $post->title}}</h2>
+               <p class="edit">[<a href="/posts/{{ $post->id }}/edit">編集する</a>]</p>
                <p class='category'>種目種目：{{ $post->category}}</p>
                <p class='time'>日時日時：{{ $post->time}}</p>
                <p class='location'>活動場所：{{ $post->location}}</p>

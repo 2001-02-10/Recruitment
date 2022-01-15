@@ -18,6 +18,9 @@
                </h2>
                <p class='category'>種目：{{ $post->category}}</p>
                <p class='location'>活動場所：{{ $post->location}}</p>
+               <h5>
+               <p class='updated_at'>投稿日時：{{ $post->updated_at}}</p>
+               </h5>
             </div>
           @endforeach
           <div class='paginate'>
