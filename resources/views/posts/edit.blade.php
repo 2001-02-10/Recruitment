@@ -42,6 +42,5 @@
       </form>
       <div class="back">[<a href="/posts/{{ $post->id}}">前の画面に戻る</a>]</div>
       <div class="back">[<a href="/">募集一覧へ戻る</a>]</div>
-      
    </body>
 </html>

@@ -23,6 +23,7 @@
                </h5>
             </div>
           @endforeach
+          <a href='/posts/create'>募集する</a>
           <div class='paginate'>
             {{ $posts->links() }}
           </div>
