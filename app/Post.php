@@ -16,10 +16,9 @@ class Post extends Model
  
  protected $fillable = [
     'title',
-    'category',
     'time',
-    'location',
-    'number',
+    'gathering',
+    'destination',
     'requirement',
 ];
 }

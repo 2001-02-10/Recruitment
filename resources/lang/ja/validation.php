@@ -148,10 +148,9 @@ return [
 
     'attributes' => [
           'post.title' => 'タイトル',
-          'post.category' => '種目',
           'post.time' => '日時',
-          'post.location' => '活動場所',
-          'post.number' => '募集人数',
+          'post.gathering' => '集合場所',
+          'post.destination' => '目的地',
         ],
 
 ];
