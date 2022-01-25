@@ -3,30 +3,46 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Sports掲示板</title>
+        <title>ツーリング掲示板</title>
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+        <link href="{{secure_asset('/css/show.css')}}" rel="stylesheet">
     </head>
-   <body>
-      <h1>募集内容</h1>
-      <div class='content'>
-            <div class='content_post'>
-               <h2 class='title'>タイトル：{{ $post->title}}</h2>
-               <button class="edit">[<a href="/posts/{{ $post->id }}/edit">編集する</a>]</button>
-               <p class='category'>種目種目：{{ $post->category}}</p>
-               <p class='time'>日時日時：{{ $post->time}}</p>
-               <p class='location'>活動場所：{{ $post->location}}</p>
-               <p class='number'>募集人数：{{ $post->number}}</p>
-               <p class='requirement'>募集要件：{{ $post->requirement}}</p>
+   <body class="body">
+      <h1 class="head_01">募集詳細</h1>
+      <div class="content">
+            <div class="content_post">
+              <article　class="post_01">
+                 
+                 <div class="post_header">
+                   <h2 class="post_title">タイトル：{{ $post->title}}</h2>
+                 </div>
+                 <div class="post_body_01">
+                   <h2 class="post_time">集合日時：{{ $post->time}}</h2>
+                 </div>
+                 <div class="post_body_02">
+                   <h2 class="post_gathering">集合場所：{{ $post->gathering}}</h2>
+                 </div>
+                 <div class="post_body_03">
+                   <h2 class="post_destination">目的地：{{ $post->destination}}</h2>
+                 </div>
+                 <div class="post_body_04">
+                   <h2 class="post_requirement">募集要項：{{ $post->requirement}}</h2>
+                 </div>
+                 <form action="/posts/{{ $post->id }}" id="form_delete" method="post">
+              　    @csrf　
+            　　     @method('DELETE')
+            　　     <input type="submit" style="display:none">
+            　　     <div class="post_footer_03">
+            　　       <p class="post_text_03"><a onclick="return deletePost(this);return false;" class="button_03 -compact">投稿を削除する</a></p>
+            　　     </div>  
+            　　   <div class="post_footer_02">
+                      <p class=""post_text_02><a href="/posts/{{ $post->id }}/edit" class="button_02 -compact">編集する</a></p>
+                 </div>  
+        　　       </form>
+               </article>
             </div>
-            <form action="/posts/{{ $post->id }}" id="form_delete" method="post">
-              　@csrf　
-            　　@method('DELETE')
-            　　<input type="submit" style="display:none">
-            　　<button class="delete">[<span onclick="return deletePost(this);return false;">投稿を削除する</span>]</button>
-        　　</form>
-            <div class="footer">
-               <a href="/">募集一覧へ戻る</a>
+            <div class"post_footer_01">
+                  <p class="post_text_01"><a href="/" class="button_01 -compact">募集一覧へ戻る</a></p>
             </div>
             <script>
             　 function deletePost(e){

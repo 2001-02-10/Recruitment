@@ -11,9 +11,9 @@ class PostRequest extends FormRequest
     {
         return [
             'post.title' => 'required|string|max:50',
-            'post.category' => 'required|string|max:50',
-            'post.time' => 'required|string|max:50',
-            'post.location' => 'required|string|max:50',
+            'post.time' => 'required|string',
+            'post.gathering' => 'required|string|max:50',
+            'post.destination' => 'required|string|max:50',
             'post.requirement' => 'required|string|max:200',
         ];
     }

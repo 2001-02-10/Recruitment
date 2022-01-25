@@ -1,0 +1,157 @@
+.posts{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.head_01 {
+    text-align: center
+}
+
+.index_post {
+  margin: 1rem auto;
+  width: 30%;
+}
+
+.index_post:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  transition: all .5s;
+   text-align: center;
+}
+
+.post_01 {
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .16);
+  border-radius: 10px;
+  color: #212121;
+  text-decoration: none;
+  text-align: center;
+}
+
+.post_header {
+ 
+  text-align: center;
+}
+
+.post_title {
+  padding: 1rem 1.5rem 0;
+  font-size: 1.6rem;
+  order: 1;
+  margin-bottom: 0.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+.post_body_01 {
+  padding: 0 1.5rem;
+}
+
+.post_text_01 {
+  font-size: .8rem;
+  text-align:center;
+  text-decoration: none;
+	padding-bottom: 0;
+}
+
+.post_text_02 {
+  font-size: .8rem;
+  text-align:center;
+  text-decoration: none;
+	padding-bottom: 0;
+}
+
+.post_destination {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.post_body_02 {
+  padding: 0 1.5rem;
+}
+
+.post_updated_at {
+  font-size: .8rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.post_text_01 + .post_text_01 {
+  margin-top: .5rem;
+}
+
+.post_text_02 + .post_text_02 {
+  margin-top: .5rem;
+}
+
+.post_footer {
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.button_01 {
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color .3s ease-in-out;
+  text-align: center;
+}
+
+.button_01 a {
+  text-decoration: none;
+}
+
+.button_01.-compact {
+  padding: .5rem 1rem;
+  border-radius: .25rem;
+  background-color: #4f96f6;
+  color: #fff;
+  font-weight: bold;
+	text-decoration: none;
+}
+
+.button_01.-compact:hover,
+.button_01.-compact:focus {
+  background-color: #6bb6ff;
+}
+
+.button_02 {
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color .3s ease-in-out;
+  text-align: center;
+}
+
+.button_02 a {
+  text-decoration: none;
+}
+
+.button_02.-compact {
+  padding: .5rem 1rem;
+  border-radius: .25rem;
+  background-color: black;
+  color: #fff;
+  font-weight: bold;
+	text-decoration: none;
+}
+
+.button_02.-compact:hover,
+.button_02.-compact:focus {
+  background-color: black;
+}
+
+.body {
+  background-image: url(img_01.jpg); 
+  background-size: cover;
+  font-family: serif;
+}
+
+.paginate {
+  display: inline;
+  padding:10px 15px;
+  border:1px #ccc solid;color:#000053;
+  border-radius: 5px / 5px;
+}
+
